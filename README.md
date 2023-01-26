@@ -29,7 +29,7 @@ This is my repo for ATLS2200.
 ## Weekly Assignments
 
 - https://charlie-sutcliffe.github.io/wa/wa1.html
-- WA2
+- https://charlie-sutcliffe.github.io/wa/wa2.html
 - WA3
 - WA4
 - WA5
