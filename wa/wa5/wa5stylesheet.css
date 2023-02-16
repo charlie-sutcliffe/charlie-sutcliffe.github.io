@@ -1,0 +1,34 @@
+
+.container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+#picture{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    z-index: 0;
+}
+
+#tournament{
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    left:5%;
+    bottom: 0%;
+    opacity: 0.8;
+}
+
+#score{
+    /* width: 40px;
+    
+    background-position-x: 20px;
+
+    z-index: 2; */
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    opacity: 0.8;
+}
