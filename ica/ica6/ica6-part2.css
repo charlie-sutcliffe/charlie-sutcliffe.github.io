@@ -9,8 +9,20 @@ body{
 }
 #flex-parent p{
     padding:5vw;
+    display: flex;
 }
-
+#flex-child1{
+    order: 2;
+}
+#flex-child2{
+    order: 3;
+}
+#flex-child3{
+    order: 1;
+}
+#flex-child4{
+    order: 0;
+}
 
 #grid-parent{
     display:grid;
@@ -20,6 +32,7 @@ body{
     background-color: grey;
     padding:3vw 5vh;
     margin:5vw;
+    text-align: center;
     
 }
 #no0{
