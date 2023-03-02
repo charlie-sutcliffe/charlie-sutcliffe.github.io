@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(119, 119, 251), rgb(253, 209, 77));
+    background-image: no-repeat;
+    font: 1em comic sans ms;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(253, 209, 77);
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+
+#chessBoard{
+    background-image: url(../../img/matisseChess.png);
+    width:500px;
+    height: 500px;
+    background-size:cover;
+    z-index: 0;
+}
+
+#red-ball{
+    background-image: url(../../img/redBall.png);
+    background-image: no-repeat;
+    width: 4%;
+    height: 5%;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    top: 51%;
+    left: 46%;
+}
+
+#red-ball:hover{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: ballmove;
+}
+
+@keyframes ballmove{
+    from{
+        top: 51%;
+        left: 46%;
+    }
+    to{
+        top: 47%;
+        left: 54%;
+    }
+}
