@@ -1,0 +1,72 @@
+body{
+    color: rgb(36, 19, 73);
+    margin: 0;
+    font-family: soleil, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom right, rgba(223, 123, 123, 0.471), rgba(36, 19, 73, 0.473));
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main{
+    align-items: top;
+    /* justify-content: space-around; */
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+nav{
+    /* background-color: rgb(36, 19, 73); */
+    /* background-image: linear-gradient(to bottom right, rgb(223, 123, 123), rgb(36, 19, 73)); */
+    background-repeat: no-repeat;
+    padding: 0em;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav li{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+nav a{
+    color: rgba(223, 123, 123, 0.825);
+    padding: .5em 1em;
+    flex: 1;
+    background-image: linear-gradient(to bottom right, rgb(223, 123, 123), rgb(36, 19, 73));
+    background-size: cover;
+    text-decoration: none;
+}
+.logo{
+    background-image: linear-gradient(to bottom left, rgb(223, 123, 123), rgba(36, 19, 73, 0.815));
+    background-repeat: no-repeat;
+    background-size: fill;
+    position: sticky;
+    top: 0;
+    margin: 0px;
+    padding: 20px 5px;
+    flex: 0.2;
+    height: 235px;
+    text-align: top;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-left;
+    font-family: lust-display, serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: linear-gradient(to bot   tom right, rgb(223, 123, 123), rgb(36, 19, 73));
+}
+
+/* now add content: about blurb, pic of me, links */
+

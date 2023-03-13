@@ -5,34 +5,52 @@ body{
     font-size: 20px;
     font-weight: 400;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-image: linear-gradient(to bottom right, rgba(223, 123, 123, 0.471), rgba(36, 19, 73, 0.473));
     background-size: cover;
     background-repeat: no-repeat;
 }
 main{
-    align-items: top;
-    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 20px;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+a{
+    color: rgba(223, 123, 123, 0.825);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 img {
     max-width: 100%;
     display: block;
 }
 nav{
-    /* background-color: rgb(36, 19, 73); */
-    /* background-image: linear-gradient(to bottom right, rgb(223, 123, 123), rgb(36, 19, 73)); */
     background-repeat: no-repeat;
     padding: 0em;
     position: sticky;
-    width: 100%;
-    top: 0;
-    height: 60px;
+    width: 90%;
+    top: 30px;
+    bottom: 0;
 }
 nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 0vw;
     list-style: none;
 }
 nav li{
@@ -65,5 +83,44 @@ nav a{
     font-family: lust-display, serif;
     font-size: 1.5em;
     font-weight: 300;
-    color: linear-gradient(to bottom right, rgb(223, 123, 123), rgb(36, 19, 73));
+    color: linear-gradient(to bot   tom right, rgb(223, 123, 123), rgb(36, 19, 73));
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media only screen and (max-width: 500px){
+    .about{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin: 12px;
+    }
+    nav{
+        top: 0px;
+        padding: 0;
+    }
+}
+.about img {
+    float: left;
+    margin-right: 1em;
+    max-height: 300px;
+    width: auto;
+}
+
+.about p {
+    overflow: auto;
+}
+
+td img{
+    width: 40vw;
+
+}
+
+p img{
+    width: 10vw;
 }
