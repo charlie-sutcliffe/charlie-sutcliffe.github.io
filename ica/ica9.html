@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button{
+            border: 5px solid darkmagenta;
+            border-radius: 20px;
+            background-color: magenta;
+            padding: 25px 50px;
+            width: 250px;
+        }
+
+        p{
+            font-size: 50px;
+        }
+
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "church">
+        <img src = ../img/pre-faceshot.png alt="boutta get pitted" id="skiing">
+    </div>
+
+    <div id="button">
+        <p>Get Pitted!</p>
+    </div>
+
+    <script>
+        console.log("Hello, World!");
+        let btn = document.querySelector("#button");
+        //console.log(btn);
+        let skng = document.querySelector("#skiing");
+
+        function changeBtn() {
+            //console.log("This worked!");
+            btn.textContent = "Help I can't see!";
+            btn.style.backgroundColor = "darkmagenta";
+            btn.style.border = "5px solid magenta";
+            btn.style.color = "white";
+        }
+
+        function changeBtnBack(){
+            btn.textContent = "Get Pitted!"
+            btn.style.backgroundColor = "magenta";
+            btn.style.border = "5px solid darkmagenta";
+            btn.style.color = "black";
+            btn.style.size = 50;
+        }
+
+        function changeImg(){
+            //console.log("This worked!");
+            skng.src = "../img/faceshot.png";
+            setTimeout(changeImgBack, 500);
+            setTimeout(changeBtnBack, 500);
+        }
+
+        function changeImgBack(){
+            skng.src = "../img/pre-faceshot.png";
+            console.log("This worked!");
+        }
+
+        btn.addEventListener('click', changeImg);
+        btn.addEventListener('click', changeBtn);
+        
+
+    </script>
+</body>
+</html>
