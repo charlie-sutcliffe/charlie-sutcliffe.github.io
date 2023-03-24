@@ -1,11 +1,12 @@
 h1 {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
 
 body {
   width: 640px;
   margin: 0 auto;
+  background-image: linear-gradient(to bottom, rgb(199, 131, 131), rgb(151, 185, 222));
 }
 
 .full-img {
