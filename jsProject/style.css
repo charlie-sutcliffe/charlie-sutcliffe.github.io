@@ -1,0 +1,114 @@
+  /* Set the font family and color for the entire page */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Set the background color for the entire page */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Set the styling for the title section */
+  .title {
+    background-color: #555;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Set the styling for the title text */
+  .title h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 48px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .banner {
+    background-color: #f7c448;
+    width: 802px;
+    align-self: center;
+    margin:auto;
+  }
+  
+  .banner h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  #title-screen {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #start-button {
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #start-button:hover {
+    background-color: #3E8E41;
+  }
+  
+  /* Set the styling for the game section */
+  #game {
+    width: 800px;
+    /* padding:20px; */
+    height: 300px;
+    border: 1px solid burlywood;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  
+  #character{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+  }
+
+  @keyframes jump{
+    0%{top: 250px;}
+    30%{top: 200px;}
+    50%{top:190px;}
+    70%{top: 200px;}
+    100%{top: 250px;}
+  }
+  .animate{
+    animation: jump 450ms linear;
+  }
+
+  
+
+  #block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 230px; 
+    left: 780px; 
+  }
+  .animateBlocks{
+    animation: block 2s infinite linear;
+    /* display: none; */
+  }
+
+  @keyframes block{
+    0%{left: 800px}
+    100%{left:-20px}
+  }
